@@ -20,7 +20,7 @@ server = Flask(__name__)
 app = Dash(__name__, server=server)
 
 # Initialize components
-data_fetcher = DataFetcher(os.getenv('API_URL', 'http://your-api-url'))
+data_fetcher = DataFetcher(os.getenv('API_URL', 'https://mongodb-api-hmeu.onrender.com'))
 data_processor = DataProcessor()
 
 # Global variables with thread safety
